@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+body {
+  font-family: Inter, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background: #333;
+  color: #fff;
+  padding: 1rem;
+}
+
+.form-control:focus {
+  border-color: #dee2e6 !important;
+  outline: 0;
+  box-shadow: none !important;
+  
+}
+.navbar-toggler:focus{
+  box-shadow: none !important;
+}
+
+
+/* nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav li {
+  display: inline;
+  margin-right: 1rem;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+} */
+
+/* nav a:hover {
+  text-decoration: underline;
+} */
+
+a {
+  color: rgba(var(--bs-link-color-rgb), var(--bs-link-opacity, 1));
+  text-decoration: none !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #181D25;
+}
+/* Light mode styles */
+body.light {
+  background-color: #ffffff;
+  color: #000000;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+header.light {
+  background-color: #f0f0f0;
+  color: #000000;
+}
+
+button.light {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+/* Dark mode styles */
+body.dark {
+  background-color: #1e1e1e;
+  color: #ffffff;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+header.dark {
+  background-color: #333333;
+  color: #ffffff;
+}
+
+button.dark {
+  background-color: #444444;
+  color: #ffffff;
+}
+
+
+
+.carousel-control-prev,
+.carousel-control-next {
+  z-index: 999 !important;
+
+}
+
+.carousel-control,
+.carousel-control-prev,
+.carousel-control-next {
+  width: 35px !important;
+  border: 1px solid #B0BECB;
+  height: 35px !important;
+  cursor: pointer;
+  margin: auto 20px !important;
+  border-radius: 50% !important;
+  /* font-size: 17px !important; */
+  /* border: 1px solid #B0BECB !important */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+
+  background-size: 73% 73% !important;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+  box-shadow: none !important;
+  background-image: none !important;
+}
+
+
+.carousel-indicators {
+  z-index: 3 !important;
+  position: absolute;
+  bottom: -10% !important;
+}
+
+.carousel-indicators button {
+  height: 16px !important;
+  width: 16px !important;
+  /* border-radius: 50%; */
+  margin: 4px !important;
+}
+
+.carousel-indicators button {
+  position: relative;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: transparent !important;
+  border-radius: 50% !important;
+  /* border: 1px solid black !important; */
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.15) 0px 3px 6px 0px inset;
+   /* box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset; */
+   /* box-shadow: 0px -3px 0px 0px #0000000D inset,0px 0px 0px 2px #FFFFFF inset, 0px 4px 2px 0px #0000000F inset,0px 0px 24px 4px #0000000A inset,0px 1px 3px 0px #0000001F; */
+  
+  overflow: hidden;
+  /* Ensures the circle doesn't overflow outside the button */
+
+  /* Ensure text is not selectable when clicking the circle */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.carousel-indicators button::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 10px;
+  height: 10px;
+  background-color: #929FB1;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
