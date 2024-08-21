@@ -20,7 +20,7 @@ const tabs = [
                                 <Col xs={12} sm={12} md={6} lg={6} xl={6} xxl={6} className={`${styles['custom-col']}`}>
                                     <h5>
                                         <span className={`${styles['highlight']}`}>
-                                            <strong>Sign Up</strong>
+                                            <strong>&amp;apos;Sign Up&amp;apos;</strong>
                                         </span>
                                         <strong className={`${styles['rest-highlight']}`}> & Verify Your Profile</strong>
                                     </h5>
@@ -325,9 +325,9 @@ const tabs = [
                                 <Col xs={12} sm={12} md={6} lg={6} xl={6} xxl={6} className={`${styles['custom-col']}`}>
                                     <h5>
                                         <span className={`${styles['highlight']}`}>
-                                            {" "}
-                                            <strong>Sign Up</strong>
-                                        </span>{" "}
+                                            
+                                            <strong>&amp;apos;Sign Up&amp;apos;</strong>
+                                        </span>
                                     </h5>
                                     <p>
                                         Begin your journey by creating an account on CreatorsHub. Join our
