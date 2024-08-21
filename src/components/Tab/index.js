@@ -618,7 +618,7 @@ const Tab = () => {
                             </div>
                         ))}
                     </div>
-                </div></> : 'loading'}
+                </div></> : <>&nbsp;</>}
 
         </>
     )
