@@ -182,25 +182,91 @@ const tabs = [
                     </Col>
                     <Col md={12} lg={6} className={`${styles['card-container-wrapper']}`}>
                         <div className={`${styles['card-container']}`} style={{ display: "flex", justifyContent: "space-between", flexDirection: "column", width: "98%" }}>
+                            <div>
+                                <Card className={`${styles['main-card']}`}>
+                                    <Card.Body className="pt-0 pb-0">
+                                        <Card.Title>
+                                            <h3>
+                                                {/* <span className={`${styles["highlight-italic"]}`}>Gift</span> */}
+                                                <strong className={`${styles['rest-highlight']}`}> Wishlists</strong>
+                                            </h3>
+                                        </Card.Title>
+                                        <Card.Text>Upload wishlists with products, cash tips, crowdfunding goals, or small gifts. Receive support directly from your fans.</Card.Text>
+                                    </Card.Body>
+                                </Card>
+                            </div>
+                            <div>
+                                <div className={`${styles['creator-bottom-image']}`}>
+                                    <div className={`${styles['new-card2']}`}></div>
+                                    <div className={`${styles["new-card2-sec"]}`}></div>
+                                    <div className={`${styles['new-hover-card2']}`}>
+                                        <div className={`${styles["img1"]}`}></div>
+                                        <div className={`${styles["img2"]}`}></div>
+                                        <div className={`${styles['img3']}`}></div>
+                                        <div className={`${styles['img4']}`}></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div>
+                            <div className={`${styles['card-gradient-footer']}`}></div>
+                        </div>
+                    </Col>
+                    <Col md={12} lg={6} className={`${styles['card-container-wrapper']}`}>
+                        <div className={`${styles['card-container']}`} style={{ display: "flex", justifyContent: "space-between", flexDirection: "column", width: "98%" }}>
                             <Card className={`${styles['main-card']}`}>
                                 <Card.Body className="pt-0 pb-0">
                                     <Card.Title>
                                         <h3>
-                                            <span className={`${styles["highlight-italic"]}`}>Gift</span>
-                                            <strong className={`${styles['rest-highlight']}`}> Registry</strong>
+                                            <span className={`${styles["highlight-italic"]}`}>
+                                                Access to real-time
+                                            </span>
+                                            <strong className={`${styles['rest-highlight']}`}>
+                                               &nbsp;notifications
+                                            </strong>
                                         </h3>
                                     </Card.Title>
-                                    <Card.Text>Showcase your personal wishlist and receive gifts from fans directly through our integrated registry system. Track contributions and enjoy a streamlined experience with instant notifications.</Card.Text>
+                                    <Card.Text>
+                                        <p>Get real-time gift alerts from your fans—crowdfunding, cash gifts, tips, and wishlist items included. Stay connected and appreciated with instant notifications.</p>
+                                    </Card.Text>
                                 </Card.Body>
                             </Card>
                             <div className={`${styles['creator-bottom-image']}`}>
-                                <div className={`${styles['new-card2']}`}></div>
-                                <div className={`${styles['new-hover-card2']}`}>
-                                    <div className={`${styles['img3']}`}></div>
-                                    <div className={`${styles['img-wrapper']}`}>
-                                        <div className={`${styles['img4']}`}></div>
-                                    </div>
+                                <div className={`${styles["new-card3"]}`}></div>
+                                <div className={`${styles["new-card3-icon"]}`}></div>
+                                <div className={`${styles["new-hover-card3-img1"]}`}></div>
+                                <div className={`${styles["new-hover-card3-img2"]}`}></div>
+                            </div>
+                            <div className={`${styles['card-gradient-footer']}`}></div>
+                        </div>
+                    </Col>
+                    <Col md={12} lg={6} className={`${styles['card-container-wrapper']}`}>
+                        <div className={`${styles['card-container']}`} style={{ display: "flex", justifyContent: "space-between", flexDirection: "column", width: "98%" }}>
+                            <Card className={`${styles['main-card']}`}>
+                                <Card.Body className="pt-0 pb-0">
+                                    <Card.Title>
+                                        <h3>
+                                            <strong className={`${styles['rest-highlight']}`}>Pay </strong>
+                                            <span className={`${styles["highlight-italic"]}`}>Per View </span>{" "}
+                                        </h3>
+                                    </Card.Title>
+                                    <Card.Text>
+                                        <p>
+                                            Monetize your best work with exclusive pay-per-video and
+                                            premium content options. Engage your audience with unique
+                                            features and insights, enhancing viewer satisfaction.
+                                        </p>
+                                    </Card.Text>
+                                </Card.Body>
+                            </Card>
+                            <div className={`${styles["bottom-image3"]}`}>
+                                <div className={`${styles["new-card4"]}`}>
+                                    <div className={`${styles["img1"]}`}></div>
+                                    <div className={`${styles["img3"]}`}></div>
+                                    <div className={`${styles["img2"]}`}></div>
                                 </div>
+                                <div className={`${styles["new-cardhover4"]}`}></div>
                             </div>
                             <div className={`${styles['card-gradient-footer']}`}></div>
                         </div>

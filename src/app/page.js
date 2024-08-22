@@ -56,7 +56,7 @@ export default function Home() {
     },
     {
       title: "",
-      icon: "/assets/svg/ytgaming2.svg",
+      icon: "/assets/svg/tiktok2.svg",
       color: "",
       hoverTitle: "TikTok",
       hoverIcon: "/assets/svg/tiktok.svg",
@@ -111,13 +111,13 @@ export default function Home() {
     <main className={`${styles['main']}`}>
       <Container fluid className={`d-flex align-items-center justify-content-center p-0 my-5 ${styles["content-row"]}`}>
         <Card className={styles['hero-main-card']}>
-          <Row className={styles['hero-card-row']}>
+          <Row className={` my-5 ${styles['hero-card-row']}`}>
             <Col xs={12} sm={12} md={12} lg={6} xl={6} xxl={6} className={styles["content-column"]}>
               <div className={`${styles["dummmy"]} ${styles["left-content-column"]}`}>
                 <div className={styles["left-side-content"]}>
                   <div className="text-start position-relative justify-content-start">
                     <h6 className={styles["highlighted-text"]}>
-                      <span className={styles["highlight-italic"]}>Creator</span>
+                      <span className={styles["highlight-italic"]}>Creator </span>
                       <span className={styles["highlight"]}>
                         <strong>Appreciation</strong>
                         <br />

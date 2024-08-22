@@ -1,0 +1,190 @@
+.goHome {
+  border: 1px solid #E5E7EB;
+  box-shadow: 0px 1px 2px 0px #0000000D;
+  color: #1F2937;
+  font-size: 15px;
+  font-weight: 600;
+  padding: 10px 12px;
+  border-radius: 8px;
+}
+
+.auth-form {
+  border-radius: 20px;
+  box-shadow: #0a254059 0 -2px 6px inset;
+  background-image: url('./../../public/assets/images/headergradient.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+}
+
+.hr-without-text {
+  /* line-height: 1em; */
+  position: relative;
+  outline: 0;
+  margin: 0;
+  border: 0;
+  color: black;
+  text-align: center;
+  height: 1.5em;
+  opacity: 0.5;
+
+  &:before {
+    content: "";
+
+    background: linear-gradient(to right, transparent, #818078, transparent);
+    position: absolute;
+    left: 0;
+    top: 10%;
+    width: 100%;
+    height: 1px;
+  }
+
+  &:after {
+    content: attr(data-content);
+    position: relative;
+    display: inline-block;
+    color: black;
+    padding: 0 0.5em;
+    color: #818078;
+    background-color: #fcfcfa;
+  }
+}
+
+.mybutton {
+  position: relative;
+  height: 40px;
+  width: 90px;
+  outline: none;
+  border-radius: 12px !important;
+  font-size: 18px !important;
+  font-weight: 600 !important;
+  background: #1E1E1E;
+  border: 1px solid #1E1E1E;
+}
+
+.mybutton:before {
+  position: absolute;
+  content: '';
+  top: -2px;
+  left: -2px;
+  height: calc(100% + 4px);
+  width: calc(100% + 4px);
+  border-radius: 5px;
+  z-index: -1;
+  opacity: 0;
+  filter: blur(8px);
+  background: linear-gradient(45deg,
+      #ff0000,
+      #ff7300,
+      #fffb00,
+      #48ff00,
+      #00ffd5,
+      #002bff,
+      #7a00ff,
+      #ff00c8,
+      #ff0000);
+  background-size: 500%;
+  transition: opacity 0.3s ease-in-out;
+  animation: animate 20s linear infinite;
+}
+
+.mybutton:hover:before {
+  opacity: 1;
+}
+
+.mybutton:hover:active:before {
+  filter: blur(5px);
+}
+
+@keyframes animate {
+  0% {
+    background-position: 0 0;
+  }
+
+  25% {
+    background-position: 200% 0;
+  }
+
+  50% {
+    background-position: 400% 0;
+  }
+
+  75% {
+    background-position: 200% 0;
+  }
+
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.sec-type-row h6 .highlight-italic,
+.sec-signup-row h6 .highlight-italic {
+  font-size: 40px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 52px;
+  letter-spacing: -.02em;
+  text-align: center;
+}
+
+.sec-type-row h6 .rest-highlight,
+.sec-signup-row h6 .rest-highlight {
+  font-family: "Ubuntu Sans";
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 52px;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: #181D25;
+}
+
+.textColor {
+  color: #606e80;
+  font-size: 16px;
+}
+
+.socialButtons {
+  color: #181D25;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 18.15px;
+  height: 46px;
+  margin: 5px 0px;
+  border: 1px solid #E5E7EB;
+  box-shadow: 0px 1px 2px 0px #0000000D;
+  border-radius: 8px;
+}
+
+.separator {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #929FB1;
+
+}
+
+.navbar-toggler:focus {
+  box-shadow: none !important;
+}
+
+.separator::before,
+.separator::after {
+  content: '';
+  flex: 1;
+  border-bottom: 1px solid #E1E5EA;
+}
+
+.separator:not(:empty)::before {
+  margin-right: .25em;
+}
+
+.separator:not(:empty)::after {
+  margin-left: .25em;
+}
+
+.customInput {
+  background-color: #F3F4F6 !important;
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.0509803922);
+  border: none !important;
+}

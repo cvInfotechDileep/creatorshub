@@ -55,7 +55,7 @@
 
     // experimented----------
     // box-shadow: 0px -3px 0px 0px #0000000D inset, 0px 0px 0px 2px #FFFFFF inset, 0px 4px 2px 0px #0000000F inset, -5px 0px 0px -5px rgba(0, 0, 0, 0.0392156863) inset, 0px 1px 3px 0px #0000001F;
-
+    align-content: center;
     z-index: 1020;
 }
 
@@ -143,16 +143,20 @@
     box-shadow: 0px 1px 2px 0px #0000000D;
 
 }
+
 .mybutton {
     position: relative;
     height: 40px;
     width: 90px;
     outline: none;
-     border-radius: 12px !important; 
-     font-size: 18px !important;
-     font-weight: 600 !important;
-  }
-  .mybutton:before {
+    border-radius: 12px !important;
+    font-size: 18px !important;
+    font-weight: 600 !important;
+    background: #1E1E1E;
+    border: 1px solid #1E1E1E;
+}
+
+.mybutton:before {
     position: absolute;
     content: '';
     top: -2px;
@@ -163,47 +167,52 @@
     z-index: -1;
     opacity: 0;
     filter: blur(8px);
-    background: linear-gradient(
-      45deg,
-      #ff0000,
-      #ff7300,
-      #fffb00,
-      #48ff00,
-      #00ffd5,
-      #002bff,
-      #7a00ff,
-      #ff00c8,
-      #ff0000
-    );
+    background: linear-gradient(45deg,
+            #ff0000,
+            #ff7300,
+            #fffb00,
+            #48ff00,
+            #00ffd5,
+            #002bff,
+            #7a00ff,
+            #ff00c8,
+            #ff0000);
     background-size: 500%;
     transition: opacity 0.3s ease-in-out;
     animation: animate 20s linear infinite;
-  }
-  .mybutton:hover:before {
-    opacity: 1;
-  }
-  .mybutton:hover:active:before {
-    filter: blur(5px);
-  }
-  @keyframes animate {
-    0% {
-      background-position: 0 0;
-    }
-    25% {
-      background-position: 200% 0;
-    }
-    50% {
-      background-position: 400% 0;
-    }
-    75% {
-      background-position: 200% 0;
-    }
-    100% {
-      background-position: 0 0;
-    }
-  }
+}
 
-  @media (min-width: 500px) and (max-width: 991px) {
+.mybutton:hover:before {
+    opacity: 1;
+}
+
+.mybutton:hover:active:before {
+    filter: blur(5px);
+}
+
+@keyframes animate {
+    0% {
+        background-position: 0 0;
+    }
+
+    25% {
+        background-position: 200% 0;
+    }
+
+    50% {
+        background-position: 400% 0;
+    }
+
+    75% {
+        background-position: 200% 0;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
+}
+
+@media (min-width: 500px) and (max-width: 991px) {
     .navbar-collapse {
         width: 100%;
         background-color: #f4f0f0 !important;
@@ -214,6 +223,7 @@
         opacity: 1;
         margin-top: 1%;
     }
+
     .custom-search .search-bar-wrapper {
         width: 100% !important;
     }
@@ -230,10 +240,12 @@
         opacity: 1;
         margin-top: 1%;
     }
-    .custom-search{
+
+    .custom-search {
         display: inline;
     }
-    .responsiveCollaps{
+
+    .responsiveCollaps {
         display: inline;
     }
 }

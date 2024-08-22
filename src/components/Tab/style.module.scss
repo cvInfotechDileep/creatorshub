@@ -51,7 +51,7 @@
 .tab-content {
     position: relative;
     margin: 24px auto 0px auto;
-
+    font-family: "Inter";
     font-size: 20px;
     font-weight: 500;
     line-height: 32px;
@@ -169,7 +169,7 @@ ul {
 }
 
 .slider-carousel-container .custom-col p {
-    font-family: "Ubuntu Sans";
+    font-family: "Inter";
     font-size: 20px;
     font-weight: 500;
     line-height: 32px;
@@ -188,7 +188,7 @@ ul {
 }
 
 .card-container-row {
-    gap: 15px 0;
+    gap: 20px 0;
     margin-top: 100px;
 
 }
@@ -217,15 +217,19 @@ ul {
 }
 
 .card-container-wrapper h3 {
-    font-family: Ubuntu Sans;
+    font-family: "Ubuntu Sans";
     font-size: 32px;
     line-height: 32px;
     text-align: center;
     margin-top: 40px;
 }
+.card-container-wrapper h3 .rest-highlight {
+    font-family: "Ubuntu Sans";
+    font-weight: 800;
+}
 
 .card-container-wrapper p {
-    font-family: Ubuntu Sans;
+    font-family: "Inter";
     font-size: 20px;
     font-weight: 500;
     text-wrap: wrap;
@@ -250,6 +254,10 @@ ul {
     border: none;
     background: none;
     transition: transform .3s ease-out .5s;
+}
+.card-container-wrapper h3 .highlight-italic {
+    font-style: italic;
+    font-weight: 400;
 }
 
 
@@ -316,6 +324,11 @@ ul {
     transform: translateY(0);
     opacity: 1;
 }
+.card-container:hover .creator-bottom-image .new-card1{
+        /* filter: blur(2px); */
+        opacity: 0.5;
+    }
+
 .creator-bottom-image .new-hover-card1 .img-wrapper {
     height: 78px;
     width: 420px;
@@ -516,7 +529,8 @@ ul {
 }
 
 .card-container:hover .creator-bottom-image .new-card3-icon:after {
-    content: "2";
+    // content: "2";
+    content: " ";
     height: 15px;
     width: 15px;
     position: absolute;
@@ -897,6 +911,7 @@ ul {
         text-align: left;
         margin: 0 !important;
         line-height: 32px;
+        font-family: "Inter";
     }
 
 
@@ -948,6 +963,7 @@ ul {
 
         p {
             font-size: 16px !important;
+            font-family: "Inter";
 
             ul {
                 li {
@@ -970,6 +986,7 @@ ul {
 
         p {
             font-size: 14px !important;
+            font-family: "Inter";
 
             ul {
                 li {
@@ -992,6 +1009,7 @@ ul {
 
         p {
             font-size: 14px !important;
+            font-family: "Inter";
 
             ul {
                 li {

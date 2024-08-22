@@ -34,7 +34,7 @@ function JoinHub() {
               <InputGroup className={`mb-5 mt-4 ${styles["join-now-input"]}`} style={{height:"50px", borderRadius:"0px 12px 12px 0px"}}>
                 <InputGroup.Text
                   id="basic-addon1"
-                  className="rounded-left"
+                  className={styles["rounded-left"]}
                   style={{ textTransform: "lowercase", borderTopLeftRadius:"12px",borderBottomLeftRadius:"12px" }}
                 >
                   {`creatorshub.online/`}

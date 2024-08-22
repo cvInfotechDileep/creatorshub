@@ -36,17 +36,17 @@ export default function PublicHeader() {
                 <Form className={`col-6 ${styles["custom-search"]}`} style={{ gap: "0.75rem" }}>
                 <div className={`d-flex ${styles["search-bar-wrapper"]}`}>
                     {/* <InputGroup className="mb-3"> */}
-                    <FormControl
+                    {/* <FormControl
                       type="search"
                       placeholder="Search Creator"
                       aria-label="Search"
                       // className="custom-search-input"
                       className={`d-flex ${styles["custom-search-input"]}`}
-                    />
+                    /> */}
                     {/* </InputGroup> */}
-                    <Button className='bg-white rounded-end-circle searchbtn border border-start-0 rounded-0'>
+                    {/* <Button className='bg-white rounded-end-circle searchbtn border border-start-0 rounded-0'>
                       <img src='/assets/svg/search.svg' alt='' />
-                    </Button>
+                    </Button> */}
                     {/* <FontAwesomeIcon
                                         icon={faSearch}
                                         color="#6B7280"
