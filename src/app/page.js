@@ -111,7 +111,7 @@ export default function Home() {
     <main className={`${styles['main']}`}>
       <Container fluid className={`d-flex align-items-center justify-content-center p-0 my-5 ${styles["content-row"]}`}>
         <Card className={styles['hero-main-card']}>
-          <Row className={` my-5 ${styles['hero-card-row']}`}>
+          <Row className={` my-4 ${styles['hero-card-row']}`}>
             <Col xs={12} sm={12} md={12} lg={6} xl={6} xxl={6} className={styles["content-column"]}>
               <div className={`${styles["dummmy"]} ${styles["left-content-column"]}`}>
                 <div className={styles["left-side-content"]}>

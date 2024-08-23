@@ -117,50 +117,50 @@ export default function SignIn() {
                   <div className={`my-2 ${styles["separator"]}`}>OR</div>
                 </Row>
                 <Row className='w-50'>
-                <Form className='p-0'>
-                        <InputGroup className='mb-3'>
-                          <InputGroup.Text className={`${styles['customInput']}`}>
-                            <img className='mx-2' src='assets/svg/mail.svg' />
-                          </InputGroup.Text>
-                          <FormControl
-                            className={`${styles['customInput']}`}
-                            placeholder='you@email.com'
-                            aria-label='Email'
-                            value={email}
-                            onChange={(e) => setEmail(e.target.value)}
-                            required
-                          />
-                        </InputGroup>
-                        <InputGroup className='mb-3'>
-                          <InputGroup.Text className={`${styles['customInput']}`}>
-                            <img className='mx-2' src='/assets/svg/key.svg' />
-                          </InputGroup.Text>
-                          <FormControl
-                            className={`${styles['customInput']}`}
-                            type={showPassword ? 'text' : 'password'}
-                            placeholder='Password'
-                            aria-label='Password'
-                            value={password}
-                            onChange={(e) => setPassword(e.target.value)}
-                            required
-                          />
-                          <InputGroup.Text
-                            className={`${styles['customInput']}`}
-                            onClick={togglePasswordVisibility}
-                            style={{ cursor: 'pointer' }}
-                          >
-                            <img
-                              src={
-                                showPassword ? "/assets/svg/hidePasswordIcon.svg" : "/assets/svg/passwordIcon.svg"
-                              }
-                              alt='toggle password visibility'
-                            />
-                          </InputGroup.Text>
-                        </InputGroup>
-                      </Form>
-                      {error && (
-                        <div className='text-danger mt-2'>{error.message}</div>
-                      )}
+                  <Form className='p-0'>
+                    <InputGroup className='mb-3'>
+                      <InputGroup.Text className={`${styles['customInput']}`}>
+                        <img className='mx-2' src='assets/svg/mail.svg' />
+                      </InputGroup.Text>
+                      <FormControl
+                        className={`${styles['customInput']}`}
+                        placeholder='you@email.com'
+                        aria-label='Email'
+                        value={email}
+                        onChange={(e) => setEmail(e.target.value)}
+                        required
+                      />
+                    </InputGroup>
+                    <InputGroup className='mb-3'>
+                      <InputGroup.Text className={`${styles['customInput']}`}>
+                        <img className='mx-2' src='/assets/svg/key.svg' />
+                      </InputGroup.Text>
+                      <FormControl
+                        className={`${styles['customInput']}`}
+                        type={showPassword ? 'text' : 'password'}
+                        placeholder='Password'
+                        aria-label='Password'
+                        value={password}
+                        onChange={(e) => setPassword(e.target.value)}
+                        required
+                      />
+                      <InputGroup.Text
+                        className={`${styles['customInput']}`}
+                        onClick={togglePasswordVisibility}
+                        style={{ cursor: 'pointer' }}
+                      >
+                        <img
+                          src={
+                            showPassword ? "/assets/svg/hidePasswordIcon.svg" : "/assets/svg/passwordIcon.svg"
+                          }
+                          alt='toggle password visibility'
+                        />
+                      </InputGroup.Text>
+                    </InputGroup>
+                  </Form>
+                  {error && (
+                    <div className='text-danger mt-2'>{error.message}</div>
+                  )}
                 </Row>
 
               </div>

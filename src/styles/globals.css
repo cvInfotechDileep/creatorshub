@@ -249,3 +249,15 @@ button.dark {
   border-radius: 50%;
   transition: transform 0.3s ease;
 }
+
+.carousel-control-next-icon, .carousel-control-prev-icon{
+  border: 1px solid #B0BECB !important;
+  border-radius: 50% !important;
+}
+/* .carousel-control-prev-icon{
+  background-image:url("./../../public/assets/images/slidePrev.png") !important
+} */
+
+:where(.css-dev-only-do-not-override-1gwfwyx).ant-steps{
+  display: none !important;
+}

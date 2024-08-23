@@ -51,11 +51,14 @@
 // }
 
 "use client"
-import { Button, Card, Col, Row } from 'react-bootstrap';
+import { Button, Card, Col, Form, FormControl, InputGroup, Row } from 'react-bootstrap';
 import styles from './../../styles/forgotpassword.module.scss';
 import Link from 'next/link';
+import { useState } from 'react';
 
 export default function ForgotPassword() {
+  const [error, setError] = useState('');
+  const [email, setEmail] = useState('');
   return (
     <>
       <Row>
@@ -69,15 +72,43 @@ export default function ForgotPassword() {
               </div>
 
               {/* Middle Section */}
-              <div className="d-flex align-items-center justify-content-center p-3">
-                <h5>Middle Section</h5>
+              {/* Middle Section */}
+              <div className="justify-content-center p-3" style={{ textAlign: "-webkit-center", marginTop:"120px" }}>
+                <Row className={`${styles["sec-type-row"]}`}>
+                  <div className='text-center'>
+                    <h6 className={`mt-3 mb-2`}>
+                      <strong className={`${styles["rest-highlight"]} ${styles["common-font-style"]}`}>Forgot Your Password?</strong>
+                    </h6>
+                    <p className={`${styles["textColor"]}`}>We’ll send you a link to reset your password in email.</p>
+                  </div>
+                </Row>
+                <Row className='w-50 my-3'>
+                  <Form className='p-0'>
+                    <InputGroup className='mb-3'>
+                      <InputGroup.Text className={`${styles['customInput']}`}>
+                        <img className='mx-2' src='assets/svg/mail.svg' />
+                      </InputGroup.Text>
+                      <FormControl
+                        className={`${styles['customInput']}`}
+                        placeholder='you@email.com'
+                        aria-label='Email'
+                        value={email}
+                        onChange={(e) => setEmail(e.target.value)}
+                        required
+                      />
+                    </InputGroup>
+                  </Form>
+                  {error && (
+                    <div className='text-danger mt-2'>{error.message}</div>
+                  )}
+                </Row>
               </div>
 
               {/* Bottom Section */}
               <div style={{ position: 'absolute', bottom: '35px', width: '100%' }}>
                 <hr className={`${styles['hr-without-text']}`} style={{ margin: 0 }} />
-                <div className="d-flex align-items-center justify-content-between px-4 text-center">
-                  <p className='m-0 text-start'>Forgot Password? Reset it by<Link href={"/"} style={{ color: "#1f2937", fontWeight: "600", borderBottom: "2px solid #1f2937", paddingBottom: "2px" }}> clicking here</Link></p>
+                <div className="float-end px-4">
+                  {/* <p className='m-0 text-start'>Forgot Password? Reset it by<Link href={"/"} style={{ color: "#1f2937", fontWeight: "600", borderBottom: "2px solid #1f2937", paddingBottom: "2px" }}> clicking here</Link></p> */}
                   <Button
                     type='submit'
                     onClick={() => { }}

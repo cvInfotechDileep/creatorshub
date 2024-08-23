@@ -188,3 +188,39 @@
   box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.0509803922);
   border: none !important;
 }
+
+:where(.css-dev-only-do-not-override-1gwfwyx).ant-steps{
+  display: none !important;
+}
+.border-lightBorder {
+  box-shadow: 0px 3px 4px 0px rgba(0, 0, 0, 0.0509803922);
+  border: none;
+}
+.border-lightBorder:hover {
+  box-shadow: 0px 3px 12px 0px rgba(0, 0, 0, 0.1215686275);
+}
+.primary{
+  border: 1px solid #0d6efd !important;
+}
+.cardDimension {
+  // max-width: 216px;
+  max-height: 290px;
+}
+.radioBtn {
+  color: #181D25 !important;
+  font-weight: 600 !important;
+  font-size: 16px !important;
+}
+.radioParagraph {
+  color: #606E80;
+  font-size: 12px;
+}
+.rounded-left {
+  border-top-left-radius: 0.7rem !important;
+  border-bottom-left-radius: 0.7rem !important;
+  background-color: #F8FAFC !important;
+  color: #6B7280;
+  font-weight: 500;
+  font-family: "Inter";
+  font-size: 15px;
+}
