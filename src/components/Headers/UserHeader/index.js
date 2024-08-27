@@ -15,7 +15,7 @@ export default function UserHeader() {
   // State to keep track of active link
   const [activeLink, setActiveLink] = useState(router.pathname);
 
-  let userData = localStorage.getItem('google_data');
+  let userData = window.localStorage.getItem('google_data');
   userData = JSON.parse(userData);
   const handleLogout = (e) => {
     dispatch(signOut());

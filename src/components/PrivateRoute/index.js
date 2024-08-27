@@ -9,8 +9,8 @@ const PrivateRoute = ({ children, allowedRoles }) => {
 
   useEffect(() => {
     if (typeof window !== 'undefined') {
-      const token = localStorage.getItem('token');
-      const userType = localStorage.getItem('user_type');
+      const token = window.localStorage.getItem('token');
+      const userType = window.localStorage.getItem('user_type');
 
       if (!token) {
         router.push('/signin');

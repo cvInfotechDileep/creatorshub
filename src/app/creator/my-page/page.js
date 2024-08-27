@@ -16,9 +16,9 @@ export default function CreatorMyPage({ params }) {
   const [userData, setUserData] = useState(null);
 
   useEffect(() => {
-    const storedUsername = localStorage.getItem('username');
-    const name = localStorage.getItem('name');
-    const email = localStorage.getItem('email');
+    const storedUsername = window.window.localStorage.getItem('username');
+    const name = window.localStorage.getItem('name');
+    const email = window.localStorage.getItem('email');
 
     if (username !== storedUsername) {
       router.push('/signin'); // Redirect to Not Found page
