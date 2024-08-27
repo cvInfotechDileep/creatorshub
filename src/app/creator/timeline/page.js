@@ -17,6 +17,7 @@ const GameGif = '/assets/gifs/game.gif';
 const GameThumbnail = '/assets/svg/game_thumbnail.svg';
 export default function CreatorTimeline() {
   const router = useRouter();
+  const [thumbnailSrc, setThumbnailSrc] = useState(GameThumbnail);
   const [userData, setUserData] = useState(null);
 
   useEffect(() => {
@@ -35,7 +36,6 @@ export default function CreatorTimeline() {
   if (!userData) {
     return <div>Loading...</div>;
   }
-  const [thumbnailSrc, setThumbnailSrc] = useState(GameThumbnail);
 
   const handleMouseEnter = () => {
     setThumbnailSrc(GameGif); // Change to GIF on hover
