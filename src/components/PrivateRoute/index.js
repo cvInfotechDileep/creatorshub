@@ -9,8 +9,8 @@ const PrivateRoute = ({ children, allowedRoles }) => {
 
   useEffect(() => {
     if (typeof window !== 'undefined') {
-      const token = window.localStorage.getItem('token');
-      const userType = window.localStorage.getItem('user_type');
+      const token = localStorage.getItem('token');
+      const userType = localStorage.getItem('user_type');
 
       if (!token) {
         router.push('/signin');
@@ -30,7 +30,7 @@ const PrivateRoute = ({ children, allowedRoles }) => {
     return <div>Loading...</div>; // Loading indicator
   }
 
-  return (<div className='py-5' style={{background:"#edf0f2"}}>{children}</div>);
+  return (<div className='my-5' style={{background:"#edf0f2"}}>{children}</div>);
 };
 
 export default PrivateRoute;

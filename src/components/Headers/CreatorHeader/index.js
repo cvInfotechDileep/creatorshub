@@ -17,7 +17,7 @@ export default function CreatorHeader() {
   const [showNotificationModal, setShowNotificationModal] = useState(false);
   const [showCartModal, setShowCartModal] = useState(false);
 
-  let userData = window.localStorage.getItem('google_data');
+  let userData = localStorage.getItem('google_data');
   userData = JSON.parse(userData);
   const handleLogout = (e) => {
     dispatch(signOut());
