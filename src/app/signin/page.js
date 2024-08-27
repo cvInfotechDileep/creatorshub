@@ -17,7 +17,6 @@ export default function SignIn() {
 
 
   const handleSubmit = async (event) => {
-    console.log("[[[[first]]]]")
     event.preventDefault();
     dispatch(signInStart());
 
@@ -53,31 +52,6 @@ export default function SignIn() {
 
   return (
     <div>
-      {/* <h1>Sign In</h1> */}
-      {/* <form onSubmit={handleSubmit}>
-        <label>
-          Email:
-          <input
-            type="email"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            required
-          />
-        </label>
-        <br />
-        <label>
-          Password:
-          <input
-            type="password"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-            required
-          />
-        </label>
-        <br />
-        <button type="submit">Sign In</button>
-      </form>
-      {error && <p>{error}</p>} */}
       <Row>
         <Col sm={12} md={12} lg={7}>
           <Card className={`my-5 ${styles["auth-form"]}`} style={{ width: '95%', margin: "auto" }}>
