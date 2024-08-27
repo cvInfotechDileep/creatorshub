@@ -9,16 +9,19 @@ export default function UserExplore() {
   const [userData, setUserData] = useState(null);
 
   useEffect(() => {
-    const storedUsername = localStorage.getItem('username');
-    const name = localStorage.getItem('name');
-    const email = localStorage.getItem('email');
+    // Check if we are in the browser environment
+    if (typeof window !== 'undefined') {
+      const storedUsername = localStorage.getItem('username');
+      const name = localStorage.getItem('name');
+      const email = localStorage.getItem('email');
 
-    if (!storedUsername) {
-      router.push('/signin'); // Redirect to Not Found page
-      return;
+      if (!storedUsername) {
+        router.push('/signin'); // Redirect to Not Found page
+        return;
+      }
+
+      setUserData({ name, email });
     }
-
-    setUserData({ name, email });
   }, [router]);
 
   if (!userData) {
