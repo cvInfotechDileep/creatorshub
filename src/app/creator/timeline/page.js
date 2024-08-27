@@ -1,5 +1,5 @@
 "use client"
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import PrivateRoute from '../../../components/PrivateRoute';
 import { Col, Container, Row } from 'react-bootstrap';
 import styles from "./../../../styles/creatortimeline.module.scss";
@@ -10,33 +10,12 @@ import ExploreCreators from '@/components/ExploreCreators';
 import ExploreStreamers from '@/components/ExploreStreamers';
 import TopUsersTab from '@/components/TopUsersTab';
 import AddPost from '@/components/AddPost';
-import { useRouter } from 'next/navigation';
 
 // Directly use relative paths as served by Next.js from the public folder
 const GameGif = '/assets/gifs/game.gif';
 const GameThumbnail = '/assets/svg/game_thumbnail.svg';
-export default function CreatorTimeline({params}) {
-  const { username } = params || {};
-  const router = useRouter();
+export default function CreatorTimeline() {
   const [thumbnailSrc, setThumbnailSrc] = useState(GameThumbnail);
-  const [userData, setUserData] = useState(null);
-
-  useEffect(() => {
-    const storedUsername = window.localStorage.getItem('username');
-    const name = window.localStorage.getItem('name');
-    const email = window.localStorage.getItem('email');
-
-    if (username !== storedUsername) {
-      router.push('/signin'); // Redirect to Not Found page
-      return;
-    }
-
-    setUserData({ username, name, email });
-  }, [username, router]);
-
-  if (!userData) {
-    return <div>Loading...</div>;
-  }
 
   const handleMouseEnter = () => {
     setThumbnailSrc(GameGif); // Change to GIF on hover

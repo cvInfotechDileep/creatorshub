@@ -1,31 +1,11 @@
 "use client"
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import styles from "./../../../styles/sendgifts.module.scss";
 import { Col, Container, Row, DropdownButton, Dropdown } from 'react-bootstrap';
 import PrivateRoute from '@/components/PrivateRoute';
-import { useRouter } from 'next/navigation';
 
-export default function UserSendGifts({params}) {
-  const { username } = params || {};
-  const router = useRouter();
-  const [userData, setUserData] = useState(null);
-
-  useEffect(() => {
-    const storedUsername = window.localStorage.getItem('username');
-    const name = window.localStorage.getItem('name');
-    const email = window.localStorage.getItem('email');
-
-    if (username !== storedUsername) {
-      router.push('/signin'); // Redirect to Not Found page
-      return;
-    }
-
-    setUserData({ username, name, email });
-  }, [username, router]);
-
-  if (!userData) {
-    return <div>Loading...</div>;
-  }
+export default function UserSendGifts() {
+  
   const tableData = [
     {
       product: "Product 1",

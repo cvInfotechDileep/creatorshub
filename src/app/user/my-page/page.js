@@ -5,31 +5,10 @@ import PrivateRoute from "@/components/PrivateRoute";
 import TopUsersTab from "@/components/TopUsersTab";
 import UserProfileSection from "@/components/UserProfileSection";
 import UsersTab from "@/components/UsersTab";
-import { useRouter } from "next/navigation";
-import { useEffect, useState } from "react";
 import { Col, Container, Row } from "react-bootstrap";
 
-export default function UserMyPage({params}) {
-  const { username } = params || {};
-  const router = useRouter();
-  const [userData, setUserData] = useState(null);
-
-  useEffect(() => {
-    const storedUsername = window.localStorage.getItem('username');
-    const name = window.localStorage.getItem('name');
-    const email = window.localStorage.getItem('email');
-
-    if (username !== storedUsername) {
-      router.push('/signin'); // Redirect to Not Found page
-      return;
-    }
-
-    setUserData({ username, name, email });
-  }, [username, router]);
-
-  if (!userData) {
-    return <div>Loading...</div>;
-  }
+export default function UserMyPage() {
+  
   return (
     <PrivateRoute allowedRoles={['fan']}>
       <Container>
