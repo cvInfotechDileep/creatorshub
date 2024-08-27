@@ -6,7 +6,7 @@ import TopUsersTab from "@/components/TopUsersTab";
 import UserProfileSection from "@/components/UserProfileSection";
 import UsersTab from "@/components/UsersTab";
 import { useRouter } from "next/navigation";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { Col, Container, Row } from "react-bootstrap";
 
 export default function UserMyPage() {

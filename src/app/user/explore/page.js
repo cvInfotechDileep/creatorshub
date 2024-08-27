@@ -2,7 +2,7 @@
 import Allcreators from "@/components/Allcreators";
 import PrivateRoute from "@/components/PrivateRoute";
 import { useRouter } from "next/navigation";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 export default function UserExplore() {
   const router = useRouter();

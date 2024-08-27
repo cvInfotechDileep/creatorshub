@@ -7,7 +7,7 @@ import UsersTab from "@/components/UsersTab";
 import ExploreCreators from "@/components/ExploreCreators";
 import ExploreStreamers from "@/components/ExploreStreamers";
 import TopUsersTab from "@/components/TopUsersTab";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 
 export default function CreatorMyPage() {
