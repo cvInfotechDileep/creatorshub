@@ -15,7 +15,7 @@ export default function AdminDashboard({ params }) {
     const email = localStorage.getItem('email');
 
     if (username !== storedUsername) {
-      router.push('/not-found'); // Redirect to Not Found page
+      router.push('/signin'); // Redirect to Not Found page
       return;
     }
 

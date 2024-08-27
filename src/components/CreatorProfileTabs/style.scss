@@ -1,0 +1,53 @@
+#user_profile_section {
+    border: none;
+}
+
+#user_profile_section .nav-link {
+    background-color: unset;
+    border: none;
+    color: #1F2937;
+    font-weight: 500;
+}
+
+#user_profile_section .nav-link.active {
+    background-color: unset;
+    border: none;
+    color: #2563EB;
+    font-weight: 500;
+    border-bottom: 1px solid;
+}
+
+#user_profile_section button {
+    border: none;
+}
+
+.nav-link.active {
+    color: #2563EB !important;
+}
+
+.tabHeading {
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+}
+
+.tabHeading h1 {
+    font-size: 16px;
+    color: #1F2937;
+}
+
+button:focus:not(:focus-visible) {
+    outline: 0 !important;
+}
+
+.nav-tabs .nav-link:hover {
+    isolation: isolate;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+.nav-link:focus-visible {
+    outline: 0;
+    box-shadow: none !important;
+}

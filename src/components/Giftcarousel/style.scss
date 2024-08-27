@@ -1,0 +1,45 @@
+.slick-prev{
+    left: -20px !important;
+}
+.slick-next{
+    right: -20px !important;
+}
+.collectionright {
+    border: 1px solid #F6F7F9;
+    padding: 10px;
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.0509803922);
+    border-radius: 12px;
+    height: 508px;
+}
+.slick-slide img {
+    display: block;
+}
+.gifttitle {
+    height: 48px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #000 !important;
+    margin: 0;
+}
+.pricebox {
+    display: flex;
+    gap: 5px;
+    font-size: 22px;
+    color: #000 !important;
+    font-weight: 600;
+    align-items:center;
+}
+.giftdescription {
+    font-size: 14px !important;
+    color: #99A1B7;
+    width: 230px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.giftwrap {
+    display: flex;
+    gap: 12px;
+}

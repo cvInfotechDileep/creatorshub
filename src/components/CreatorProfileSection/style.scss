@@ -1,0 +1,83 @@
+.user_coverbox {
+    background-image: url("./../../../public/assets/svg/default_cover_image.svg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 12px 12px 0px 0px;
+    height: 200px;
+}
+.changecoverbox {
+    float: right
+}
+.btn.changecover:hover {
+    color: black;
+}
+.changecover {
+    margin: 20px;
+    border: 1px solid #fff;
+    color: #fff;
+    padding: 7px 16px;
+}
+.changecover:hover {
+    background: #fff;
+    color: #000;
+}
+.btn.changecover svg {
+    fill: currentColor;
+    color: initial;
+    margin-bottom: 4px;
+    margin-right: 3px;
+}
+.userimagebox {
+    margin-top: -40px;
+}
+.username_balance {
+    display: flex;
+    justify-content: space-between;
+}
+.usernameblueicon {
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+}
+.usernameblueicon h1 {
+    font-size: 20px;
+    font-weight: 500;
+    color: #000000;
+}
+.usernameblueicon span {
+    font-size: 16px;
+    color: #6B7280;
+}
+.bluetickcss {
+    width: 24px;
+}
+.faniconcss {
+    width: 59px;
+}
+.userbalancebox {
+    display: flex;
+    gap: 10px;
+    align-items: baseline;
+}
+.btnbalance {
+    border: 1px solid #E5E7EB;
+    border-radius: 8px;
+    font-size: 15px;
+    color: #6B7280;
+    font-weight: 600;
+}
+.backgrey img {
+    border: 1px solid #E5E7EB;
+    padding: 8px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.user_description_box {
+    border: 1px solid #EDF0F2;
+    border-radius: 12px;
+    padding: 20px 20px 5px;
+    margin-top: 10px;
+}
+.user_description_box p {
+    color: #6B7280;
+}

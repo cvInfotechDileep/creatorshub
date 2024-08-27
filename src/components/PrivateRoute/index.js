@@ -30,7 +30,7 @@ const PrivateRoute = ({ children, allowedRoles }) => {
     return <div>Loading...</div>; // Loading indicator
   }
 
-  return children;
+  return (<div className='py-5' style={{background:"#edf0f2"}}>{children}</div>);
 };
 
 export default PrivateRoute;

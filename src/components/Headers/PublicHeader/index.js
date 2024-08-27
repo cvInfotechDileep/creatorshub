@@ -11,7 +11,7 @@ export default function PublicHeader() {
         <div className={styles["App"]}></div>
         <div className={styles["transparent-nav"]}>
           <Navbar expand="lg" bg="transparent" className={styles["sticky-header"]}>
-            <Navbar.Brand href="#home">
+            <Navbar.Brand href="#home" className={`${styles["navbar-brand"]}`}>
               <img
                 src='/assets/svg/logo.svg'
                 className={`d-inline-block align-top ${styles["creator-hub-logo"]}`}

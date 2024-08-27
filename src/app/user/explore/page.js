@@ -1,9 +1,11 @@
+"use client"
+import Allcreators from "@/components/Allcreators";
+import PrivateRoute from "@/components/PrivateRoute";
+
 export default function UserExplore() {
-    return (
-      <div>
-        <h1>Explore</h1>
-        <p>Discover new content and creators in the Explore section.</p>
-      </div>
-    );
-  }
-  
+  return (
+    <PrivateRoute allowedRoles={['fan']}>
+      <Allcreators />
+    </PrivateRoute>
+  );
+}

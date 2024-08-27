@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:slnt,wght@-10..0,100..900&family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&display=swap');
 
 body {
-  font-family: Inter, sans-serif;
+  font-family: Inter, sans-serif !important;
   margin: 0;
   padding: 0;
 }
@@ -254,10 +254,10 @@ button.dark {
   border: 1px solid #B0BECB !important;
   border-radius: 50% !important;
 }
-/* .carousel-control-prev-icon{
-  background-image:url("./../../public/assets/images/slidePrev.png") !important
-} */
 
 :where(.css-dev-only-do-not-override-1gwfwyx).ant-steps{
+  display: none !important;
+}
+.dropdown-toggle::after {
   display: none !important;
 }

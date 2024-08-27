@@ -1,0 +1,76 @@
+// .livestreambox1 {
+//     border: 1px solid #F6F7F9;
+//     border-radius: 12px;
+//     padding: 20px;
+//     background: #fff;
+// }
+.profileoverviewtoppart {
+    display: flex;
+    justify-content: space-between;
+}
+.profileoverview h3 {
+    font-size: 20px;
+}
+.profileoverview p {
+    color: #99A1B7;
+}
+.btnpenline {
+    background: #DBEAFE !important;
+    color: #1E40AF !important;
+    font-size: 15px !important;
+    font-weight: 600;
+}
+.btnpenline img {
+    padding-right: 5px;
+}
+.custom-hr{
+    color: '#a3a3a3'
+}
+.profileoverviewtoppart {
+    display: flex;
+    justify-content: space-between;
+}
+.profileoverview h3 {
+    font-size: 20px;
+}
+.profileoverview p {
+    color: #99A1B7;
+}
+.profileeditbox {
+    display: flex;
+    gap: 20px;
+}
+.profileeditbox_left {
+    flex: 0%;
+    text-align: center;
+}
+.btnreplace {
+    color: #2563EB;
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 10px;
+}
+.profileeditbox_right {
+    flex: 80% 1;
+    border-left: 1px solid #EDF0F2;
+    padding-left: 20px;
+}
+.profileeditbox_right .form-label {
+    font-size: 15px;
+    font-weight: 500;
+}
+.savechange {
+    background: #2563EB;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 8px 12px;
+}
+.profileeditbox_right .form-label {
+    font-size: 15px;
+    font-weight: 500;
+}
+.profileeditbox_right .form-label {
+    font-size: 15px;
+    font-weight: 500;
+}

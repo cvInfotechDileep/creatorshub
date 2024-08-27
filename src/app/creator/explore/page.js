@@ -1,9 +1,11 @@
+import Allcreators from "@/components/Allcreators";
+import PrivateRoute from "@/components/PrivateRoute";
+
 export default function CreatorExplore() {
     return (
-      <div>
-        <h1>Explore</h1>
-        <p>Discover new content and connections in the Explore section.</p>
-      </div>
+      <PrivateRoute allowedRoles={['creator']}>
+        <Allcreators/>
+      </PrivateRoute>
     );
   }
   

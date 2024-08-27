@@ -80,7 +80,7 @@ export default function SignIn() {
       {error && <p>{error}</p>} */}
       <Row>
         <Col sm={12} md={12} lg={7}>
-          <Card className={`my-5 ${styles["auth-form"]}`} style={{ width: '95%', height: '100vh', margin: "auto" }}>
+          <Card className={`my-5 ${styles["auth-form"]}`} style={{ width: '95%', margin: "auto" }}>
             <Card.Body className="d-flex flex-column p-0" style={{ position: 'relative', height: '100%' }}>
               {/* Top Section */}
               <div className="d-flex align-items-center justify-content-between p-3 px-4 text-dark text-center" style={{ top: '0', width: '100%' }}>
@@ -166,7 +166,7 @@ export default function SignIn() {
               </div>
 
               {/* Bottom Section */}
-              <div style={{ position: 'absolute', bottom: '35px', width: '100%' }}>
+              <div style={{ bottom: '35px', width: '100%', paddingBottom:"35px" }}>
                 <hr className={`${styles['hr-without-text']}`} style={{ margin: 0 }} />
                 <div className="d-flex align-items-center justify-content-between px-4 text-center">
                   <p className='m-0 text-start'>Forgot Password? Reset it by<Link href={"/forgotpassword"} style={{ color: "#1f2937", fontWeight: "600", borderBottom: "2px solid #1f2937", paddingBottom: "2px" }}> clicking here</Link></p>

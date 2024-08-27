@@ -1,0 +1,137 @@
+.livestreambox1 {
+    border: 1px solid #F6F7F9;
+    border-radius: 12px;
+    padding: 20px;
+    background: #fff;
+    h3{
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 32px;
+    }
+    p{
+        color: #404B5A;
+        font-size: 16px;
+        font-weight: 400;
+    }
+   
+}
+.custom-hr {
+    background-color: #EDF0F2;             
+    border: 1px solid #EDF0F2;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.author_with_time {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 40px;
+}
+.author_details_withimage {
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+}
+.author_details_withimage img {
+    width: 46px;
+}
+.authordetails .author_spanname {
+    font-weight: 500;
+    color: #000;
+}
+.authordetails p {
+    margin: 0;
+}
+.author_emailspan {
+    color: #6B7280;
+}
+.timerspan {
+    color: #6B7280;
+    font-size: 14px;
+}
+.giftmainbox {
+    display: flex;
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.0509803922);
+    border: 1px solid #F6F7F9;
+    border-radius: 12px;
+    padding: 20px 10px;
+    justify-content: space-between;
+    width: 100%;
+}
+.giftrightbox h3, .giftrightbox_2 h3 {
+    font-size: 20px;
+}
+.pricebox {
+    display: flex;
+    gap: 5px;
+    font-size: 22px;
+    color: #404B5A;
+    font-weight: 600;
+    align-items: center;
+}
+.pricebox span {
+    font-size: 16px;
+    color: #929FB1;
+}
+.giftdescription_2 {
+    font-size: 16px;
+    color: #99A1B7 !important;
+}
+.giftwrap {
+    display: flex;
+    gap: 12px;
+}
+.vertivalIMG {
+    width: 100%;
+    max-height: 508px;
+}
+.thank_user_box {
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.0509803922);
+    border: 1px solid #F6F7F9;
+    border-radius: 12px;
+    padding: 10px;
+}
+.author_details_withimage {
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+}
+.author_details_withimage img {
+    width: 46px;
+}
+.pblue{
+    
+        color: #99A1B7;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px;
+    
+}
+.giftmainbox_2 {
+    display: flex;
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.0509803922);
+    border: 1px solid #F6F7F9;
+    border-radius: 12px;
+    padding: 20px 10px;
+    width: 100%;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+}
+.authro_with_live {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.get_notifiedcss {
+    width: 100%;
+    border: 1px solid #E5E7EB;
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.0509803922);
+    font-size: 15px;
+    color: #6B7280;
+    padding: 8px;
+    border-radius: 8px;
+    background: #fff;
+    margin-top: 11px;
+}

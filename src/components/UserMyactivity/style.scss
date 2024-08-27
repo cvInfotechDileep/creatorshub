@@ -1,0 +1,64 @@
+.custom-hr {
+    border: 1px solid #EDF0F2;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.author_with_time {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 40px;
+}
+.authordetails {
+
+    .author_spanname {
+        color: #1F2937;
+    }
+
+    .author_emailspan {
+        color: #6B7280;
+    }
+}
+.timerspan{
+    color: #6B7280;
+    font-size: 14px;
+}
+.headingblue{
+    color: #404B5A;
+    font-size: 16px;
+}
+
+.giftmainbox_2 {
+    display: flex;
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.0509803922);
+    border: 1px solid #F6F7F9;
+    border-radius: 12px;
+    padding: 20px 10px;
+    width: 100%;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+}
+.giftdescription_2 {
+    font-size: 16px;
+    color: #99A1B7;
+}
+.authro_with_live {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.get_notifiedcss {
+    width: 100%;
+    border: 1px solid #E5E7EB;
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.0509803922);
+    font-size: 15px;
+    color: #6B7280;
+    padding: 8px;
+    border-radius: 8px;
+    background: #fff;
+    margin-top: 11px;
+}
+.giftrightbox h3, .giftrightbox_2 h3 {
+    font-size: 20px;
+}

@@ -1,0 +1,21 @@
+.socialboxshare {
+    display: flex;
+    gap: 12px;
+}
+.socialboxview2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.socialboxviewBtn {
+    display: flex;
+    gap: 5px;
+    border: 1px solid #E5E7EB;
+    border-radius: 60px;
+    padding: 2px 10px;
+    cursor: pointer;
+}
+.dotsclass {
+    color: #606E80;
+    cursor: pointer;
+}
