@@ -73,7 +73,7 @@ const PrivateRoute = ({ children, allowedRoles }) => {
   }
 
   // Render the children components once loading is complete and the user is authenticated
-  return <div className='my-5' style={{ background: "#edf0f2" }}>{children}</div>;
+  return <div className='py-5' style={{ background: "#edf0f2" }}>{children}</div>;
 };
 
 export default PrivateRoute;

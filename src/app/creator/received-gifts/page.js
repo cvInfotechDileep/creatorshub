@@ -1,10 +1,33 @@
 "use client"
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import styles from "./../../../styles/recivedgifts.module.scss";
 import { Col, Container, Row, DropdownButton, Dropdown } from 'react-bootstrap';
 import PrivateRoute from '@/components/PrivateRoute';
+import { useRouter } from 'next/navigation';
 
 export default function CreatorReceivedGifts() {
+  const router = useRouter();
+  const [userData, setUserData] = useState(null);
+
+  useEffect(() => {
+    // Check if we are in the browser environment
+    if (typeof window !== 'undefined') {
+      const storedUsername = localStorage.getItem('username');
+      const name = localStorage.getItem('name');
+      const email = localStorage.getItem('email');
+
+      if (!storedUsername) {
+        router.push('/signin'); // Redirect to Not Found page
+        return;
+      }
+
+      setUserData({ name, email });
+    }
+  }, [router]);
+
+  if (!userData) {
+    return <div>Loading...</div>;
+  }
   
   const tableData = [
     {
