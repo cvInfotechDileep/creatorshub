@@ -10,25 +10,23 @@ import TopUsersTab from "@/components/TopUsersTab";
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 
-export default function CreatorMyPage() {
+export default function CreatorMyPage({ params }) {
+  const { username } = params || {};
   const router = useRouter();
   const [userData, setUserData] = useState(null);
 
   useEffect(() => {
-    // Check if we are in the browser environment
-    if (typeof window !== 'undefined') {
-      const storedUsername = localStorage.getItem('username');
-      const name = localStorage.getItem('name');
-      const email = localStorage.getItem('email');
+    const storedUsername = localStorage.getItem('username');
+    const name = localStorage.getItem('name');
+    const email = localStorage.getItem('email');
 
-      if (!storedUsername) {
-        router.push('/signin'); // Redirect to Not Found page
-        return;
-      }
-
-      setUserData({ name, email });
+    if (username !== storedUsername) {
+      router.push('/signin'); // Redirect to Not Found page
+      return;
     }
-  }, [router]);
+
+    setUserData({ username, name, email });
+  }, [username, router]);
 
   if (!userData) {
     return <div>Loading...</div>;

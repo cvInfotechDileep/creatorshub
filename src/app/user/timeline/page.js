@@ -16,26 +16,26 @@ import { useRouter } from 'next/navigation';
 const GameGif = '/assets/gifs/game.gif';
 const GameThumbnail = '/assets/svg/game_thumbnail.svg';
 
-export default function UserTimeline() {
+export default function UserTimeline({ params }) {
+  const { username } = params || {};
   const router = useRouter();
   const [userData, setUserData] = useState(null);
   const [thumbnailSrc, setThumbnailSrc] = useState(GameThumbnail);
 
+
   useEffect(() => {
-    // Check if we are in the browser environment
-    if (typeof window !== 'undefined') {
-      const storedUsername = localStorage.getItem('username');
-      const name = localStorage.getItem('name');
-      const email = localStorage.getItem('email');
+    const storedUsername = localStorage.getItem('username');
+    const name = localStorage.getItem('name');
+    const email = localStorage.getItem('email');
 
-      if (!storedUsername) {
-        router.push('/signin'); // Redirect to Not Found page
-        return;
-      }
-
-      setUserData({ name, email });
+    if (username !== storedUsername) {
+      router.push('/signin'); // Redirect to Not Found page
+      return;
     }
-  }, [router]);
+
+    setUserData({ username, name, email });
+  }, [username, router]);
+
 
   if (!userData) {
     return <div>Loading...</div>;
