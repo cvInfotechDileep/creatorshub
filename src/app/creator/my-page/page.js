@@ -1,4 +1,4 @@
-"use Client";
+"use Client"
 import { Col, Container, Row } from "react-bootstrap";
 // import styles from "./../../../styles/creatormypage.module.scss"
 import PrivateRoute from "@/components/PrivateRoute";
