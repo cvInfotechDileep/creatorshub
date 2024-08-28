@@ -261,6 +261,12 @@ ul {
     font-style: italic;
     font-weight: 400;
 }
+.card-container-wrapper h3 .highlight {
+    background: linear-gradient(95deg, #1f3daa 5%, #e7029f 31.89%, #e7029f 44.17%, #e86a43 68.74%, #f6a29f 76.67%, #a58e49 100%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 800;
+}
 
 
 .creator-bottom-image {

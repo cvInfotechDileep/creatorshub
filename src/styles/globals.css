@@ -96,6 +96,12 @@ header {
     background-position: 0 0;
   }
 }
+@media (max-width: 448px) {
+  .mybutton{
+      width: fit-content;
+      font-size: 14px;
+  }
+}
 
 /* nav ul {
   list-style: none;

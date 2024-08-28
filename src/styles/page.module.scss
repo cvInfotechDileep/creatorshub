@@ -1413,7 +1413,7 @@
         height: 100% !important;
         border-radius: 12px !important;
         // border-radius: 1rem !important;
-        box-shadow: rgba(10, 37, 64, 0.35) 0px -2px 4px 0px inset;
+        // box-shadow: rgba(10, 37, 64, 0.35) 0px -2px 4px 0px inset;
         transform: rotate(-11deg) translatex(2vw);
     }
 
@@ -1446,6 +1446,9 @@
     .second.card h4 {
         font-size: 16px;
         letter-spacing: 0.001em;
+    }
+    .signature{
+        font-size: 30px;
     }
 }
 

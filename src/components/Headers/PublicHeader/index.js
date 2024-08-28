@@ -53,29 +53,30 @@ export default function PublicHeader() {
                                         className="custom-search-icon"
                                     /> */}
                   </div>
-                  <div onClick={() => {
-                    // setIsDay(!isDay);
-                  }}
-                  >
-                    {" "}
-                    <img src="/assets/svg/themetoggleicon.svg" className="toggle-icon-daynight" />
-                  </div>
+                  
 
 
                 </Form>
-                <div className='d-flex align-items-center' style={{ minWidth: "fit-content", gap: "0.75rem" }}>
+                
+              </div>
+              <div className='d-flex align-items-center' style={{ minWidth: "fit-content", gap: "0.75rem" }}>
+              <div onClick={() => {
+                    // setIsDay(!isDay);
+                  }}
+                  >
+                    <img src="/assets/svg/themetoggleicon.svg" className="toggle-icon-daynight" />
+                  </div>
                   <Link href='/signin'>
                     <Button variant="dark" className={`${styles['mybutton']}`}>
                       Log In
                     </Button>
                   </Link>
                   <Link href='/signup'>
-                    <Button variant="dark" className={`w-100 ${styles['mybutton']}`}>
+                    <Button variant="dark" className={`${styles['mybutton']}`}>
                       <img src='assets/svg/user-plus.svg' style={{ marginRight: "3px" }} /> Sign Up
                     </Button>
                   </Link>
                 </div>
-              </div>
 
             </Navbar.Collapse>
           </Navbar>

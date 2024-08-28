@@ -7,9 +7,11 @@ import { signInFailure, signInStart, signInSuccess } from '@/redux/slices/authSl
 import { Button, Card, Col, Form, FormControl, InputGroup, Row } from 'react-bootstrap';
 import styles from './../../styles/signin.module.scss'
 import Link from 'next/link';
+import { useRouter } from 'next/navigation';
 
 export default function SignIn() {
   const dispatch = useDispatch();
+  const router = useRouter();
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [showPassword, setShowPassword] = useState(false);
@@ -17,12 +19,14 @@ export default function SignIn() {
 
 
   const handleSubmit = async (event) => {
+    console.log("[[[[first]]]]")
     event.preventDefault();
     dispatch(signInStart());
 
     try {
       const response = await signinApi({ email, password });
       const { status, token, user_type, data } = response.data;
+      console.log(response.data,"pppppppp")
 
       if (status) {
         localStorage.setItem('token', token);
@@ -32,11 +36,11 @@ export default function SignIn() {
 
         //  Redirect based on user_type to the specific username path
         if (user_type === 'fan') {
-          window.location.href = `/user/${data[0].username}`;
+          router.push(`/user/${data[0].username}`);
         } else if (user_type === 'creator') {
-          window.location.href = `/creator/${data[0].username}`;
+          router.push(`/creator/${data[0].username}`);
         } else if (user_type === 'admin') {
-          window.location.href = `/admin/${data[0].username}`;
+          router.push(`/admin/${data[0].username}`)
         }
       } else {
         dispatch(signInFailure('Sign-in failed'));

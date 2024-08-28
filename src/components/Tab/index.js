@@ -223,7 +223,7 @@ const tabs = [
                                                 Access to real-time
                                             </span>
                                             <strong className={`${styles['rest-highlight']}`}>
-                                               &nbsp;notifications
+                                                &nbsp;notifications
                                             </strong>
                                         </h3>
                                     </Card.Title>
@@ -486,9 +486,7 @@ const tabs = [
                                     </Card.Title>
                                     <Card.Text>
                                         <p>
-                                            Monetize your best work with exclusive pay-per-video and
-                                            premium content options. Engage your audience with unique
-                                            features and insights, enhancing viewer satisfaction.
+                                            Unlock exclusive content with one-tap payments, supporting creators and accessing premium videos effortlessly. Join a community of supporters and enjoy seamless, rewarding interactions.
                                         </p>
                                     </Card.Text>
                                 </Card.Body>
