@@ -13,14 +13,14 @@ import { useRouter } from "next/navigation";
 export default function CreatorMyPage() {
   const router = useRouter();
   const [userData, setUserData] = useState(null);
-  const [isClient, setIsClient] = useState(false);
+  // const [isClient, setIsClient] = useState(false);
+
+  // useEffect(() => {
+  //   setIsClient(true); // Now we know we are in the client environment
+  // }, []);
 
   useEffect(() => {
-    setIsClient(true); // Now we know we are in the client environment
-  }, []);
-
-  useEffect(() => {
-    if (isClient) {
+    if (typeof window !== 'undefined') {
       const storedUsername = localStorage.getItem('username');
       const name = localStorage.getItem('name');
       const email = localStorage.getItem('email');
@@ -32,7 +32,19 @@ export default function CreatorMyPage() {
 
       setUserData({ name, email });
     }
-  }, [router, isClient]);
+    // if (isClient) {
+    //   const storedUsername = localStorage.getItem('username');
+    //   const name = localStorage.getItem('name');
+    //   const email = localStorage.getItem('email');
+
+    //   if (!storedUsername) {
+    //     router.push('/signin'); // Redirect to sign-in page
+    //     return;
+    //   }
+
+    //   setUserData({ name, email });
+    // }
+  }, [router]);
 
   if (!userData) {
     return <div>Loading...</div>;
