@@ -9,8 +9,8 @@
 
 //   useEffect(() => {
 //     if (typeof window !== 'undefined') {
-//       const token = localStorage.getItem('token');
-//       const userType = localStorage.getItem('user_type');
+//       const token = window.localStorage.getItem('token');
+//       const userType = window.localStorage.getItem('user_type');
 
 //       if (!token) {
 //         router.push('/signin');
@@ -47,8 +47,8 @@ const PrivateRoute = ({ children, allowedRoles }) => {
   useEffect(() => {
     // Check if the code is running on the client-side
     if (typeof window !== 'undefined') {
-      const token = localStorage.getItem('token');
-      const userType = localStorage.getItem('user_type');
+      const token = window.localStorage.getItem('token');
+      const userType = window.localStorage.getItem('user_type');
 
       // If no token is found, redirect to the sign-in page
       if (!token) {
