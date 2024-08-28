@@ -9,10 +9,7 @@ import UsersTab from '@/components/UsersTab';
 import ExploreCreators from '@/components/ExploreCreators';
 import ExploreStreamers from '@/components/ExploreStreamers';
 import TopUsersTab from '@/components/TopUsersTab';
-<<<<<<< HEAD
 import { useRouter } from 'next/navigation';
-=======
->>>>>>> 7fd1f33 (added user and creators pages)
 
 
 // Directly use relative paths as served by Next.js from the public folder
